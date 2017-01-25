@@ -4,7 +4,7 @@
 
 void swap(void *vp1, void *vp2, int size)
 {
-    char buffer[sizeof(int)];
+    char buffer[sizeof(double)];
 
     memcpy(buffer, vp1, size);
     memcpy(vp1, vp2, size);
@@ -14,11 +14,11 @@ void swap(void *vp1, void *vp2, int size)
 main()
 {
 
-    int x = 8;
-    float y = 8.0;
+    double x = 1.234567;
+    double y = 2.468468;
 
-    swap(&x, &y, sizeof(x));
+    swap(&x, &y, sizeof(double));
     
-    printf("x = %d\n", x);
+    printf("x = %f\n", x);
     printf("y = %f\n", y);
 }
