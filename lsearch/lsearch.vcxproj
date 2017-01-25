@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{161A9E65-D637-492A-8E18-E092B2ADCD89}</ProjectGuid>
+    <ProjectGuid>{B39E7405-876B-4925-BB3E-E1327D3A7C25}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>genericLSearch</RootNamespace>
+    <RootNamespace>lsearch</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lsearch.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
